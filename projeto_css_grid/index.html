@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Moda</title>
+<style> 
+    body{
+        background: #42376A;
+    }
+    .container-1{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    
+    }
+    
+    .container-1 > div{
+        border-left: gray 1px solid;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+    }
+    .cor1{
+        background: #42376A;
+    }
+    .cor2{
+        background: #b46088;
+    }
+    .cor3{
+        background: #EBF0F2
+    }
+    .titulo{
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+
+
+    }
+    .titulo-2{
+        font-size: 12px;
+        padding: 0;
+        margin-top: 2em;
+        margin-left: 5em;
+        margin-right: 5em;
+        border-top: gray 1px solid;
+    
+    }
+    .lista{
+        list-style-type: none
+    }
+    .idioma{
+        margin-top: 1em;
+        margin-left: 2em;
+        background: none;
+        border: none;
+        color: white;
+    }
+    .catalogo{
+        width: 110px;
+        height: 30px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        background:  #42376A;
+        border: 2px solid gray;
+        color:white;
+    }
+    .buscar{
+        width: 110px;
+        height: 30px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        background:  #b46088;
+        border: 2px solid gray;
+        color:white;
+    }
+    .box-1{
+        background: #b46088;
+        grid-column: 3/5;
+    }
+    .find{
+        width: 450px;
+        height: 30px;
+        margin-top: 1em;
+    }
+    .box-2{
+        background-image: url(imagem1.jpg);
+        background-size: cover;
+        grid-column: 1/4;
+        height: 28em;
+        
+    }
+    .box-3{
+        background-image: url(imagem2.jpg);
+        background-size: cover;
+
+    }
+    .container-2{
+        position: absolute;
+        float: left;
+        margin-top: -12em;
+        width: 20em;
+        height: 12em;
+        border: 1px solid gray;
+        background: rgb(66, 55, 106,0.5);
+        text-align: center;
+        color: white;
+        
+    }
+ 
+</style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="cor1">
+            <p class="titulo">ESTAÇÃO</br> DA</br> MODA</p>
+            <p class="titulo-2">Inspiração fashion</p>
+        </div>
+        <div class="cor1">
+            <p>
+                <ul class="lista">
+                    <li>HOME</li>
+                    <li>CONTA</li>
+                    <li>LISTA DE DESEJOS</li>
+                    <li>CHECKOUT</li>
+                    <li>BLOG</li>
+                </ul>
+            </p>
+        </div>
+        <div class="cor1">
+            <p>
+                <ul class="lista">
+                    <li>Login</li>
+                    <li>Criar conta</li>
+                </ul>
+            </p>
+            <p>
+                <form>
+                    <select class="idioma" name="moeda">
+                        <option value="Reais">R$</option>
+                        <option value="Dolares">USD</option>           
+                    </select></br>
+                    <select class="idioma" name="moeda">
+                        <option value="Portugues">Portugues</option>
+                        <option value="Ingles">Ingles</option>           
+                    </select>
+                </form>
+             </p>
+        </div>
+        <div class="cor2">
+            <p class="titulo">CARINHO DE COMPRA</p>
+            <p>
+                <ul class="lista">
+                    <li>2 itens</li>
+                    <li>400R$</li   >
+                </ul>
+            </p>
+
+        </div>
+        <div class="cor3">
+            <form>
+                <input type="button" class="catalogo" value="CATALOGO">
+            </form>
+        </div>
+        <div class="cor2">
+            <form>
+                <input type="button" class="buscar" value="Encontrar">
+            </form>
+        </div>
+        <div class="box-1">
+            <form name="input" action="html_form_action.asp" method="GET">
+                <input type="text" class="find" name="find">
+                <input type="submit" class="buscar" value="Buscar">
+            </form>
+        </div>
+        <div class="box-2">
+
+        </div>
+        <div class="box-3">
+            <p class="titulo">VENDAS DE PRIMAVERA</p>
+            <P class="titulo-2">Aproveite essa linda </br>
+                experiencia de vida
+            </P>
+        </div>
+    </div>
+    <div class="container-2">
+        <p class="titulo">COLEÇÃO</br> DE INVERNO</p>
+        <P class="titulo-2">Aproveite essa linda </br>experiencia de vida</P>
+        <form>
+            <input type="button" class="buscar" value="Ler mais">
+        </form>
+    </div>
+
+</body>
+</html>
